@@ -1,0 +1,17 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        Instrument[] band = { new Guitar(), new Drum(), new Instrument() };
+        foreach (var i in band) i.Play();
+        Message[] messages = { new Email(), new SMS(), new Message() };
+        foreach (var m in messages) m.Send();
+        Food[] lunch = { new Pizza(), new Burger(), new Food() };
+        foreach (var f in lunch) f.Eat();
+        Shape[] shapes = { new Circle(), new Triangle() };
+        foreach (var s in shapes) Console.WriteLine(s.Draw());
+        Player[] team = { new Warrior(), new Archer(), new Player() };
+        foreach (var p in team) p.Attack();
+        Console.ReadKey();
+    }
+}
